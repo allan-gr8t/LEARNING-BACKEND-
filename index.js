@@ -16,21 +16,6 @@ app.get("/", (req, res) => {
   res.send("Hello from  node API");
 });
 
-// getting all the products
-
-app.get("/api/products");
-
-// get a product by Id
-app.get("/api/products/:id");
-
-//post a product
-app.post("/api/products");
-
-// update a product
-app.put("/api/products/:id");
-
-// delete a product
-app.delete("/api/products/:id");
 mongoose
   .connect("mongodb://localhost:27017/")
   .then(() => {
